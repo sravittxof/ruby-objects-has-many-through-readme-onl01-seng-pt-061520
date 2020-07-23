@@ -32,6 +32,8 @@ class Waiter
   best_tipped_meal.customer
   end
   
-  
+  def most_frequent_customer
+    self.meals.collect { |meal| meal.customer }
+  end
   
 end
